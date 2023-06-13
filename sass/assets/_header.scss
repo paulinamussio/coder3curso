@@ -1,0 +1,86 @@
+header {
+    #container{
+    display: grid;
+    grid-template-areas: 
+    'logo titulo bandera';
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+    font-family: 'Patrick Hand SC', cursive;
+        #logo{
+            grid-area: logo;
+        }
+        #titulo{
+            grid-area: titulo;
+            h1{
+                text-align: center;
+                justify-content: space-around;
+                background-color: white;
+            } // creo que esto puede ir aca
+        }
+        #bandera{
+            grid-area: bandera;
+            justify-self: end;
+            align-self: end;
+            .banderas{
+                height: auto;
+            }
+        }
+    }
+}
+
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+    header{
+        #container{
+            #logo{
+                .logo_global{
+                    width: 100px;
+                    height: auto; 
+                    // creo que el height aca y en banderas puede ir adntro de el id arriba
+                }
+            }
+            #titulo{
+                h1{
+                    margin-top: 5px;
+                    font-size: 70px;
+                }
+            }
+            #bandera{
+                .banderas{
+                    width: 90px;
+                    // height: auto;
+                }
+            }
+        }
+    }
+
+}
+
+/* mobile */
+
+@media only screen and (max-width: 768px) {
+    header{
+        #container{
+            #logo{
+                .logo_global{
+                    width: 70px;
+                    height: auto;
+                }
+            }
+            #titulo{
+                h1{
+                    font-size: 40px;
+                    margin-bottom: 5px;
+                }
+            }
+            #bandera{
+                .banderas{
+                    width: 50px;
+                    // height: auto;
+                }
+            }
+        } 
+    }
+}

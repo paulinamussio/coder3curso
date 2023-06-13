@@ -1,0 +1,555 @@
+@charset "UTF-8";
+header #container {
+  display: grid;
+  grid-template-areas: "logo titulo bandera";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto auto;
+  background-color: white;
+  font-family: "Patrick Hand SC", cursive;
+}
+header #container #logo {
+  grid-area: logo;
+}
+header #container #titulo {
+  grid-area: titulo;
+}
+header #container #titulo h1 {
+  text-align: center;
+  justify-content: space-around;
+  background-color: white;
+}
+header #container #bandera {
+  grid-area: bandera;
+  justify-self: end;
+  align-self: end;
+}
+header #container #bandera .banderas {
+  height: auto;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  header #container #logo .logo_global {
+    width: 100px;
+    height: auto;
+  }
+  header #container #titulo h1 {
+    margin-top: 5px;
+    font-size: 70px;
+  }
+  header #container #bandera .banderas {
+    width: 90px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 768px) {
+  header #container #logo .logo_global {
+    width: 70px;
+    height: auto;
+  }
+  header #container #titulo h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  header #container #bandera .banderas {
+    width: 50px;
+  }
+}
+.navbar {
+  background-color: #f2f2f2;
+}
+.navbar .container-fluid {
+  justify-content: space-around;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+/* desktop */
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .navbar .container-fluid .navbar-brand {
+    font-size: 15px;
+  }
+  .navbar .container-fluid .navbar-toggler {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .navbar .container-fluid #navbarNavDropdown .navbar-nav .nav-item .nav-link {
+    font-size: 10px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  font-family: "Patrick Hand SC", cursive;
+  background-image: linear-gradient(to top, blue, #A1CC95);
+  color: white;
+}
+.footer .btn {
+  background-color: green;
+}
+
+.imagen_fondo {
+  background-image: url(../img/familia-ensamblada-e1538510634725-800x400.jpeg);
+  width: 100%;
+}
+
+.conteiner2 {
+  background-image: linear-gradient(to top, #A1CC95, white);
+  font-family: "Patrick Hand SC", cursive;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.conteiner2 .card {
+  margin: 5px 5px;
+  width: 20%;
+  height: 310px;
+  background-color: white;
+  padding: 4em;
+  border-radius: 6px;
+}
+.conteiner2 .card .card-image {
+  background-image: url(../img/INDIVIDUAL.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 60%;
+  border-radius: 6px 6px 0 0;
+}
+.conteiner2 .card .card-image:hover {
+  transform: scale(0.98);
+}
+.conteiner2 .card .category {
+  text-transform: uppercase;
+  font-family: 13px;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  text-align: center;
+}
+.conteiner2 .card .category:hover {
+  cursor: pointer;
+}
+.conteiner2 .card .heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+  font-size: 11px;
+}
+.conteiner2 .card .heading .author {
+  color: grey;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.conteiner2 .card .heading:hover {
+  cursor: pointer;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  .imagen_fondo {
+    height: 80vh;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .imagen-fondo {
+    height: 30vh;
+  }
+  .conteiner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteiner2 .card {
+    margin-bottom: 30px; /* Añade un margen inferior de 30 píxeles */
+    display: flex; /* Aplica el modelo de caja flexible */
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    width: 90%;
+    height: 350px;
+  }
+  .conteiner2 .heading .author {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.qhacemos {
+  background-color: #A1CC95;
+}
+.qhacemos p {
+  margin-bottom: 0;
+  padding: 7px;
+}
+
+#conteiner3 {
+  display: grid;
+  grid-template-areas: "info1 info1 foto1" "info2 info2 foto2" "info3 info3 foto3" "info4 info4 foto4";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  background-color: #A1CC95;
+}
+#conteiner3 #Segurosdesaludindiviudales {
+  grid-area: info1;
+}
+#conteiner3 #Segurosdesaludindiviudales .tit_cont3 {
+  font-size: 50px;
+  text-align: center;
+}
+#conteiner3 #Segurosdesaludindiviudales .par_cont3 {
+  font-size: 15px;
+  text-align: justify;
+  text-align: center;
+  padding: 7px;
+}
+#conteiner3 #foto1 {
+  grid-area: foto1;
+  justify-self: end;
+  align-self: end;
+}
+#conteiner3 #foto1 .img_cont3 {
+  height: 200px;
+  width: 400px;
+}
+#conteiner3 #Segurosdesaludcorporativos {
+  grid-area: info2;
+}
+#conteiner3 #Segurosdesaludcorporativos .tit_cont3 {
+  font-size: 50px;
+  text-align: center;
+}
+#conteiner3 #Segurosdesaludcorporativos .par_cont3 {
+  font-size: 15px;
+  text-align: justify;
+  text-align: center;
+  padding: 7px;
+}
+#conteiner3 #foto2 {
+  grid-area: foto2;
+  justify-self: end;
+  align-self: end;
+}
+#conteiner3 #foto2 .img_cont3 {
+  height: 200px;
+  width: 400px;
+}
+#conteiner3 #Segurosdeportivos {
+  grid-area: info3;
+}
+#conteiner3 #Segurosdeportivos .tit_cont3 {
+  font-size: 50px;
+  text-align: center;
+}
+#conteiner3 #Segurosdeportivos .par_cont3 {
+  font-size: 15px;
+  text-align: justify;
+  text-align: center;
+  padding: 7px;
+}
+#conteiner3 #foto3 {
+  grid-area: foto3;
+  justify-self: end;
+  align-self: end;
+}
+#conteiner3 #foto3 .img_cont3 {
+  height: 200px;
+  width: 400px;
+}
+#conteiner3 #Segurosdevida {
+  grid-area: info4;
+}
+#conteiner3 #Segurosdevida .tit_cont3 {
+  font-size: 50px;
+  text-align: center;
+}
+#conteiner3 #Segurosdevida .par_cont3 {
+  font-size: 15px;
+  text-align: justify;
+  text-align: center;
+  padding: 7px;
+}
+#conteiner3 #foto4 {
+  grid-area: foto4;
+  justify-self: end;
+  align-self: end;
+}
+#conteiner3 #foto4 .img_cont3 {
+  height: 200px;
+  width: 400px;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  .qhacemos h2 {
+    font-size: 40px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .qhacemos h2 {
+    font-size: 25px;
+  }
+  #conteiner3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+.imagen_fondo {
+  background-image: url(../img/familia-ensamblada-e1538510634725-800x400.jpeg);
+  background-size: cover;
+  width: 100%;
+}
+
+.info {
+  padding: 5px 5px;
+  background-color: #A1CC95;
+}
+.info p {
+  margin: 5px;
+}
+
+.equipo h2 {
+  margin-bottom: 0px;
+  font-style: italic;
+  text-align: center;
+  padding: 5px;
+  /* margin: 5px; */
+  background-image: url(../img/fondo2.jpeg);
+}
+
+.conteiner2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.conteiner2 .card {
+  margin: 5px 5px;
+  width: 20%;
+  height: 310px;
+  background-color: white;
+  padding: 0.4em;
+  border-radius: 6px;
+}
+.conteiner2 .card .card-image {
+  background-image: url(../img/INDIVIDUAL.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 60%;
+  border-radius: 6px 6px 0 0;
+}
+.conteiner2 .card .card-image:hover {
+  transform: scale(0.98);
+}
+.conteiner2 .card .category {
+  text-transform: uppercase;
+  font-family: 13px;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  text-align: center;
+}
+.conteiner2 .card .category:hover {
+  cursor: pointer;
+}
+.conteiner2 .card .heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+  font-size: 11px;
+}
+.conteiner2 .card .heading:hover {
+  cursor: pointer;
+}
+.conteiner2 .card .author {
+  color: grey;
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  .imagen_fondo {
+    height: 30vh;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .imagen-fondo {
+    height: 30vh;
+  }
+  .conteiner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteiner2 .card {
+    display: flex; /* Aplica el modelo de caja flexible */
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    width: 90%;
+    height: 350px;
+    margin-bottom: 10px;
+  }
+  .conteiner2 .heading .author {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+.imagen_fondo {
+  background-image: url(../img/familia-ensamblada-e1538510634725-800x400.jpeg);
+  background-size: cover;
+  width: 100%;
+}
+
+#conteiner5 {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  .imagen_fondo {
+    height: 81vh;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .imagen-fondo {
+    height: 20vh;
+  }
+  #conteiner5 {
+    display: flex;
+    background-color: #A1CC95;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#container4 {
+  font-family: "Patrick Hand SC", cursive;
+  display: grid;
+  grid-template-areas: "contactanos ubicacion" "imagen formulario";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  background-color: white;
+}
+#container4 #contactanos4 {
+  grid-area: contactanos;
+  text-align: justify;
+  text-align: center;
+}
+#container4 #contactanos4 .logoredes {
+  width: 100%;
+  height: 100%;
+}
+#container4 #ubicacion4 {
+  grid-area: ubicacion;
+  justify-self: center;
+  align-self: end;
+}
+#container4 #ubicacion4 .donde {
+  text-align: center;
+}
+#container4 #imagen4 {
+  grid-area: imagen;
+}
+#container4 #imagen4 img {
+  width: 100%;
+  height: 100%;
+}
+#container4 #formulario {
+  grid-area: formulario;
+}
+#container4 #formulario #form {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+#container4 #formulario #form fieldset .cons {
+  line-height: 1;
+}
+#container4 #formulario #form fieldset .formdiv {
+  padding: 2px;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  #container4 #contactanos4 .conth2 {
+    font-size: 50px;
+    padding-top: 20px;
+    margin: 0;
+  }
+  #container4 #contactanos4 .logoredes {
+    width: 100%;
+    height: 100%;
+  }
+  #container4 #formulario #form fieldset .cons {
+    font-size: 30px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 768px) {
+  #container4 {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 8px;
+  }
+  #container4 #contactanos4 .conth2 {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  #container4 #contactanos4 div p {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  #container4 #ubicacion4 .donde {
+    text-align: center;
+    font-size: 25px;
+    border: 0;
+    margin-bottom: 0;
+  }
+  #container4 #ubicacion4 .wtc {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #container4 #ubicacion4 iframe {
+    height: 200px;
+    width: 400px;
+  }
+  #container4 #formulario {
+    grid-area: formulario;
+    /* background-color:brown */
+  }
+  #container4 #formulario #form fieldset legend {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+  }
+  #container4 #formulario #form fieldset .cons {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

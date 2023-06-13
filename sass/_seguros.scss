@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0
+    }
+
+
+.qhacemos {
+    background-color: #A1CC95;
+    p{
+        margin-bottom: 0;
+        padding: 7px;
+    } 
+}
+
+#conteiner3{
+    display: grid;
+    grid-template-areas: 
+    'info1 info1 foto1'
+    'info2 info2 foto2'
+    'info3 info3 foto3'
+    'info4 info4 foto4';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    background-color: #A1CC95;
+    #Segurosdesaludindiviudales{
+        grid-area: info1;
+        .tit_cont3{
+            font-size: 50px;
+            text-align: center;
+        }
+        .par_cont3{
+            font-size: 15px;
+            text-align: justify;
+            text-align: center;
+            padding: 7px;
+        }
+    }
+    #foto1{
+        grid-area: foto1;
+        justify-self: end;
+        align-self: end; 
+        .img_cont3{
+            height: 200px;
+            width: 400px;
+        }  
+    }
+    #Segurosdesaludcorporativos{
+        grid-area: info2;
+        .tit_cont3{
+            font-size: 50px;
+            text-align: center;
+        }
+        .par_cont3{
+            font-size: 15px;
+            text-align: justify;
+            text-align: center;
+            padding: 7px;
+        }
+    }
+    #foto2{
+        grid-area: foto2;
+        justify-self: end;
+        align-self: end; 
+        .img_cont3{
+            height: 200px;
+            width: 400px;
+        }  
+    }
+    #Segurosdeportivos{
+        grid-area: info3;
+        .tit_cont3{
+            font-size: 50px;
+            text-align: center;
+        }
+        .par_cont3{
+            font-size: 15px;
+            text-align: justify;
+            text-align: center;
+            padding: 7px;
+        }
+    }
+    #foto3{
+        grid-area: foto3;
+        justify-self: end;
+        align-self: end; 
+        .img_cont3{
+            height: 200px;
+            width: 400px;
+        }
+    }
+    #Segurosdevida{
+        grid-area: info4;
+        .tit_cont3{
+            font-size: 50px;
+            text-align: center;
+        }
+        .par_cont3{
+            font-size: 15px;
+            text-align: justify;
+            text-align: center;
+            padding: 7px;
+        }
+    }
+    #foto4{
+        grid-area: foto4;
+        justify-self: end;
+        align-self: end; 
+        .img_cont3{
+            height: 200px;
+            width: 400px;
+        }  
+    }
+
+}
+
+
+/* desktop */
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+    .qhacemos{
+        h2{
+            font-size: 40px;
+        }
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    
+    .qhacemos{
+        h2{
+            font-size: 25px;
+        }
+    }
+    #conteiner3 {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        
+    }
+}

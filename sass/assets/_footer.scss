@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0
+    }
+
+.footer{
+    font-family: 'Patrick Hand SC', cursive;
+    // background-image: url(../img/Azul-medio.jpeg);
+    background-image: linear-gradient(to top, blue, #A1CC95);
+    color: white;
+    .btn{
+        background-color: green;
+    }
+}
